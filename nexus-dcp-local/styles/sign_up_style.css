@@ -1,0 +1,147 @@
+body {
+  margin: 0px;
+  background-color: #f2f0ef;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0e2f5f;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: lightblue; */
+  /* margin-top: 100px; */
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-top: 110px;
+  /* background-color: lightpink; */
+}
+.nexus-logo {
+  height: 130px;
+  width: 130px;
+  max-width: 100%;
+}
+
+.app-title p {
+  color: #0e2f5f;
+  font-size: 40px;
+  margin: 15px 15px 15px 0px;
+}
+
+.sign-up-section {
+  background-color: white;
+  height: 550px;
+  width: 350px;
+  margin-top: 90px;
+  margin-left: 200px;
+  border-radius: 10px;
+  padding-left: 80px;
+  max-width: 90%;
+}
+
+.sign-up-heading {
+  font-size: 30px;
+  margin-left: 90px;
+  margin-top: 70px;
+}
+
+.username-signup-input,
+.password-signup-input,
+.confirm-password-input {
+  height: 35px;
+  width: 270px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.sign-up-button {
+  margin-top: 30px;
+  background-color: #0e2f5f;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 160px;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+.sign-up-button:hover {
+  background-color: #1b3d70;
+  cursor: pointer;
+}
+
+.sign-up-button:active {
+  background-color: #0e2f5f;
+  cursor: pointer;
+}
+
+.log-in-prompt {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0px;
+  }
+
+  .nexus-logo {
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+
+  .title-section {
+    margin: 0;
+    /* text-align: center; */
+    flex-direction: row;
+  }
+
+  .app-title p {
+    font-size: 30px;
+  }
+
+  .sign-up-section {
+    margin: 30px 0;
+    padding-left: 20px;
+    width: 80%;
+  }
+
+  .username-input,
+  .password-input,
+  .username-prompt,
+  .password-prompt {
+    margin-left: 10px;
+  }
+
+  .confirm-password-input,
+  .confirm-password-prompt {
+    margin-left: 5px;
+  }
+
+  .sign-up-heading {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .sign-up-button {
+    margin-left: 0;
+    display: block;
+    margin: 30px auto 0 auto;
+  }
+
+  .log-in-prompt {
+    text-align: center;
+    margin: 20px 0;
+  }
+}

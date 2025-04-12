@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus DCP</title>
+    <link rel="stylesheet" href="../styles/main_style.css" />
+  </head>
+  <body>
+    <div class="log-out-section">
+      <button class="log-out-button" id="log-out-button">Log Out</button>
+    </div>
+
+    <div class="main-container">
+      <div class="welcome-section">
+        <p>Welcome christopher_quinto!</p>
+      </div>
+      <div class="data-grid-container">
+        <div class="data-grid"></div>
+        <table class="data-table">
+          <!-- The header and rows will be generated via JS -->
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Username</th>
+              <th>Password</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <!-- <div class="fields">
+        <div class="username-container">
+          <p class="username-main-prompt">Username</p>
+          <input type="text" id="username-main" class="username-main" />
+        </div>
+        <div class="password-container">
+          <p class="password-main-prompt">Password</p>
+          <input type="text" id="password-main" class="password-main" />
+        </div>
+      </div> -->
+      <div id="update-dialog" style="display: none" class="dialog-box-update">
+        <p>Update User</p>
+        <input type="text" placeholder="User ID" id="update-id" />
+        <input type="text" placeholder="New Username" id="update-username" />
+        <input type="text" placeholder="New Password" id="update-password" />
+        <button id="update-save">Save</button>
+        <button
+          onclick="document.getElementById('update-dialog').style.display='none'"
+        >
+          Cancel
+        </button>
+      </div>
+
+      <div class="buttons-container">
+        <button class="update-button" id="update-button">Update</button>
+        <button class="delete-button" id="delete-button">Delete</button>
+        <!-- <button class="save-button" id="save-button">Save</button>
+        <button class="cancel-button" id="cancel-button">Cancel</button> -->
+      </div>
+    </div>
+    <div id="delete-dialog" style="display: none" class="dialog-box-delete">
+      <p>Delete User</p>
+      <input type="text" placeholder="User ID" id="delete-id" />
+      <button id="delete-confirm">Delete</button>
+      <button
+        onclick="document.getElementById('delete-dialog').style.display='none'"
+      >
+        Cancel
+      </button>
+    </div>
+    <script src="../scripts/main_script.js"></script>
+  </body>
+</html>
